@@ -17,6 +17,9 @@ class Home extends StatelessWidget {
       body: Row(
         children: <Widget>[
           Expanded(
+              flex: 3,
+              child: Image.asset("assets/img/spacepic1.jpg")),
+          Expanded(
             flex: 3,
             child: Container(
               padding: EdgeInsets.all(30.0),
