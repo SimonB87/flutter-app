@@ -14,9 +14,21 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(30),
-        child: Text("Hello baby!"),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text("Hi there"),
+          FlatButton(
+            onPressed: () {},
+            color: Colors.amber,
+            child: Text("Burn!"),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text("inside contaimner"),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
